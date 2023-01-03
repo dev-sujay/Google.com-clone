@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 8px;
+}
+
+.navbar>* {
+    margin: 7px;
+}
+
+.gmail,
+.images {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .87);
+}
+
+.gmail:hover,
+.images:hover {
+    text-decoration: underline;
+}
+
+.apps-toggle-btn {
+    background-color: transparent;
+    border: none;
+    width: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    position: relative;
+    padding: 7px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.apps-toggle-btn:hover{
+    background-color: #f0f0f0;
+}
+
+.apps-toggle-btn::after{
+    content: "Google apps";
+    position: absolute;
+    top: 120%;
+    width: 85px;
+    background-color: rgb(87, 86, 86);
+    padding: 5px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    color: white;
+    display: none;
+}
+
+.apps-toggle-btn:hover:after{
+    display: block;
+}
+
+
+.apps-toggle-btn svg {
+    width: 100%;
+    fill: #5f6368;
+}
+
+.user-btn {
+    width: 2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
