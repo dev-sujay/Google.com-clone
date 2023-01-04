@@ -1,4 +1,4 @@
-const apps = [
+const appsData = [
     {
         logo:"/assets/user.jpg",
         title:"Account",
