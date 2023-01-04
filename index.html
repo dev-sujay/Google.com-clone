@@ -15,15 +15,13 @@
         <nav class="navbar">
             <a href="https://mail.google.com/mail/?authuser=0&ogbl" class="gmail">Gmail</a>
             <a href="https://www.google.co.in/imghp?hl=en&authuser=0&ogbl" class="images">Images</a>
-            <button class="apps-toggle-btn">
-                <svg class="gb_0e" focusable="false" viewBox="0 0 24 24">
-                    <path
-                        d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
-                    </path>
-                </svg>
-                <div class="apps-container">
-                </div>
-            </button>
+            <svg class="apps-toggle-btn" viewBox="0 0 24 24">
+                <path
+                    d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
+                </path>
+            </svg>
+            <div class="apps-container">
+            </div>
             <img class="user-btn" src="/assets/user.jpg" />
         </nav>
     </header>
@@ -33,9 +31,15 @@
             <label for="search-input" class="search-input-lable">
                 <img src="/assets/search-icon.png" class="search-icon">
             </label>
-            <input type="text" class="search-input">
-            <img src="/assets/search-by-voice-btn.png" class="voice-search">
-            <img src="/assets/search-by-image.svg" class="image-search">
+            <input type="text" id="search-input">
+            <div class="voice-search">
+                <img src="/assets/search-by-voice-btn.png">
+            </div>
+            <div class="image-search">
+                <img src="/assets/search-by-image.svg">
+            </div>
+
+
         </div>
         <div class="search-btns">
             <button class="search">Google Search</button>
@@ -110,32 +114,33 @@
                 <a class="terms" href="https://policies.google.com/terms?hl=en-IN&fg=1">
                     Terms
                 </a>
-                <div class="settings">
-                    <h1>Settings</h1>
-                    <div class="settings-options reveal">
-                        <a href="https://www.google.com/preferences?hl=en-IN&fg=1">
-                            Search settings
-                        </a>
-                        <a href="https://www.google.com/advanced_search?hl=en-IN&fg=1">
-                            Advanced search
-                        </a>
-                        <a href="https://myactivity.google.com/privacyadvisor/search?utm_source=googlemenu&fg=1">
-                            Your data in search
-                        </a>
-                        <a href="https://myactivity.google.com/product/search?utm_source=google&hl=en-IN&fg=1">
-                            Search history
-                        </a>
-                        <a href="https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1">
-                            Search help
-                        </a>
-                        <p>
-                            Send feedback
-                        </p>
-                        <button class="dark-mode-btn">
-                            Dark theme: Off
-                        </button>
-                    </div>
+
+                <p class="settings">Settings</p>
+
+                <div class="settings-options">
+                    <a href="https://www.google.com/preferences?hl=en-IN&fg=1">
+                        Search settings
+                    </a>
+                    <a href="https://www.google.com/advanced_search?hl=en-IN&fg=1">
+                        Advanced search
+                    </a>
+                    <a href="https://myactivity.google.com/privacyadvisor/search?utm_source=googlemenu&fg=1">
+                        Your data in search
+                    </a>
+                    <a href="https://myactivity.google.com/product/search?utm_source=google&hl=en-IN&fg=1">
+                        Search history
+                    </a>
+                    <a href="https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1">
+                        Search help
+                    </a>
+                    <p>
+                        Send feedback
+                    </p>
+                    <button class="dark-mode-btn">
+                        Dark theme: Off
+                    </button>
                 </div>
+
             </div>
         </div>
     </footer>
